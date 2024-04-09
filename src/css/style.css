@@ -13,50 +13,57 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    width: 100%;
+    /* height: 100vh; */
+}
+header {
+    width: 100%;
+    height: 100%;
 }
 .title {
     position: relative;
     color: white;
     font-size: 43px;
     line-height: 83px;
-    top: 75px;
-    left: 36.7px;
+    /* top: 75px; */
+    /* left: 36.7px; */
 }
 .word {
     color: #23d692;
     position: relative;
-    left: 30px;
-    top: 75px;
+    /* left: 30px; */
+    /* top: 75px; */
+    margin-left: 30px;
 }
 .container{
-    background-color: black;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     background-image: url("../img/barny.jpg");
     background-size: cover;
     background-position: center;
-    color: #5d5d5d;
-    padding: 20px;
+    background-color:black;
+    /* padding: 20px; */
 }
 nav ul li a{
     color: white;
     padding: 15px;
     font-size: 18px;
     font-family: sans-serif;
-    margin: 15px;
     opacity: 0.6;
+    text-decoration: none;
+    margin: 15px;
 }
 
 nav ul{
     display: flex;
 }
+nav ul li{
+    margin-bottom: 150px;
+}
 
 nav ul li a:hover {
-    color: #fff;
+    color: #23d692;
     background: #D5D5D5;
 }
 
@@ -68,7 +75,6 @@ nav ul li a:hover {
     justify-content: space-between;
     background-color: gray;
     padding: 8px;
-
 }
 
 nav{
@@ -110,15 +116,65 @@ nav{
     background-color: gray;
     padding: 8px;
 }
+.contact-dropdown{
+    position: absolute;
+    top: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 8px;
+}
+.demo-dropdown{
+    position: absolute;
+    top: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 8px;
+}
+.purchase-dropdown{
+    position: absolute;
+    top: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 8px;
+}
+
 .home-hover:hover .home-dropdown{
     display: flex;
 }
 .portfolio-hover:hover .portfolio-dropdown{
-display: flex;
+    display: flex;
 }
 .resume-hover:hover .resume-dropdown{
     display: flex;
 }
 .blog-hover:hover .blog-dropdown{
     display: flex;
+}
+.contact-hover:hover .contact-dropdown{
+    display: flex;
+}
+.demo-hover:hover .demo-dropdown{
+    display: flex;
+}
+.purchase-hover:hover .purchase-dropdown{
+    display: flex;
+}
+.text{
+    color: white;
+    position: relative;
+    margin-left: 250px;
+}
+.img{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
 }
