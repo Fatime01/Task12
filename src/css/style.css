@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.54em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+.title {
+    position: relative;
+    color: white;
+    font-size: 43px;
+    line-height: 83px;
+    top: 75px;
+    left: 36.7px;
+}
+.word {
+    color: #23d692;
+    position: relative;
+    left: 30px;
+    top: 75px;
+}
+.container{
+    background-color: black;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-image: url("../img/barny.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #5d5d5d;
+    padding: 20px;
+}
+nav ul li a{
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 15px;
+    opacity: 0.6;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background: #D5D5D5;
+}
+
+.home-dropdown{
+    position: absolute;
+    top: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 8px;
+
+}
+
+nav{
+    position: relative;
+}
+.resume-dropdown{
+    position: absolute;
+    top: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 8px;
+}
+.portfolio-dropdown{
+    position: absolute;
+    top: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 8px;
+}
+.blog-dropdown{
+    position: absolute;
+    top: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 8px;
+}
+.home-dropdown{
+    position: absolute;
+    top: 45px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 8px;
+}
+.home-hover:hover .home-dropdown{
+    display: flex;
+}
+.portfolio-hover:hover .portfolio-dropdown{
+display: flex;
+}
+.resume-hover:hover .resume-dropdown{
+    display: flex;
+}
+.blog-hover:hover .blog-dropdown{
+    display: flex;
+}
